@@ -2,9 +2,6 @@ from math import log
 
 _FILE_NAME = "base_exp.txt"
 
-def get_log(b, e):
-  return e * log(b)
-
 line_num = 0
 max_line = 0
 max_log = 0
