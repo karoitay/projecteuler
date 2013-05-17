@@ -1,4 +1,3 @@
-from math import floor
 from math import ceil
 from fractions import gcd
 
