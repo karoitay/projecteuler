@@ -1,20 +1,6 @@
-MAX = 1000000
+from fractions import gcd
 
-def gcd(a, b):
-  while a != b:
-    a_even = a % 2 == 0
-    b_even = b % 2 == 0
-    if a_even and b_even:
-      a, b = a / 2, b / 2
-    elif a_even:
-      a = a / 2
-    elif b_even:
-      b = b / 2
-    elif a > b:
-      a = (a - b) / 2
-    else:
-      b = (b - a) / 2
-  return a
+MAX = 1000000
 
 max_num = 0
 max_val = 0
