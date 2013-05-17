@@ -21,7 +21,7 @@ max_val = 0
 max_denom = 0
 for denom in xrange(3, MAX + 1):
   num = int((3 * denom - 1) / 7)
-  if arecoprime(num, denom) == 1 and float(num) / denom > max_val:
+  if arecoprime(num, denom) and float(num) / denom > max_val:
     max_val = float(num) / denom
     max_num = num
     max_denom = denom
