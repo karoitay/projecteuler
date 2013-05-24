@@ -1,18 +1,7 @@
+from utils.primes import getprimes
 import math
 
 MAX_P = 5000000
-
-def getprimes():
-  primes = {0: False, 1: False}
-  for i in range(MAX_P):
-    if i in primes:
-      continue
-    primes[i] = True
-    j = 2 * i
-    while j <= MAX_P:
-      primes[j] = False
-      j = j + i
-  return primes
 
 def isprime(n, primes, candidates):
   if n in primes:
@@ -63,6 +52,7 @@ def find(primes, candidates, size, found=None):
 
 MAX = 9000
 SIZE = 5
-primes = getprimes()
+primes = getprimes(MAX_P)
 candidates = [k for k,v in primes.iteritems() if k <= MAX and v]
-print find(primes, candidates, SIZE)
+print sum(find(primes, candidates, SIZE)[0])
+

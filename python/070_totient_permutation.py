@@ -1,3 +1,5 @@
+from utils.primes import getprimes
+
 import math
 MAX = 10**7
 HIGH_BOUND = int(math.sqrt(MAX) * 2)
@@ -12,14 +14,7 @@ def permutations(n1, n2):
     l2.remove(c)
   return len(l2) == 0
 
-primes = [None] * HIGH_BOUND
-primes[0] = False
-primes[1] = False
-for i in xrange(2, HIGH_BOUND):
-  if primes[i] == None:
-    primes[i] = True
-    for j in xrange(2*i, HIGH_BOUND, i):
-      primes[j] = False
+primes = getprimes(HIGH_BOUND)
 primes = [i for i in xrange(2, HIGH_BOUND) if primes[i]]
 
 result = 0
@@ -35,3 +30,4 @@ for p1 in primes:
       max_found = float(phi_n) / n
       result = n
 print result
+
