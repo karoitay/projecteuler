@@ -18,3 +18,4 @@ result = 0
 for i in xrange(2, MAX + 1):
   result += phi(i, factors)
 print int(result)
+
