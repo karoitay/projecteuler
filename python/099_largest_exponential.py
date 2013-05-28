@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from math import log
 
 _FILE_NAME = "base_exp.txt"

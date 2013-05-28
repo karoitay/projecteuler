@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """
 For a rect of size NxM the number of contained rects is (N + 1choose 2)*(M + 1 choose 2).
 That is, N*(N+1)*M*(M+1)/4.

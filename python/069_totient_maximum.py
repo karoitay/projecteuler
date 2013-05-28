@@ -1,3 +1,4 @@
+#!/usr/bin/python
 MAX = 1000000
 
 def getdevisors():

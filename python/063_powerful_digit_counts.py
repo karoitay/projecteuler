@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import math 
 
 def compute(n):

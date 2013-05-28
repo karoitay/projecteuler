@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from math import factorial
 F = [factorial(i) for i in xrange(10)]
 

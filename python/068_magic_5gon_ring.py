@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from itertools import permutations
 from operator import itemgetter
 

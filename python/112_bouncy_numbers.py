@@ -1,3 +1,4 @@
+#!/usr/bin/python
 THRESHOLD = .99
 
 def is_inc(n):

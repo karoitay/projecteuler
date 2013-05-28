@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from decimal import *
 
 MAX = 100

@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """
 Need to find the only x so that (x^2 = 1_2_3_4_5_6_7_8_9_0 = y) where every _ is a single digit.
 x must be greater than 10^9 and smaller than 10^10 because 10^9^2 = 10^18 < y and 10^10^2 = 10^20 > y.

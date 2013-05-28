@@ -1,3 +1,4 @@
+#!/usr/bin/python
 def loadexample():
   return [[131, 673, 234, 103, 18 ],
           [201, 96 , 342, 965, 150],

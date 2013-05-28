@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from utils.primes import getprimes
 
 import math
