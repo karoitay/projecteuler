@@ -1,7 +1,7 @@
 #!/usr/bin/python
 MAX_L = 1500000
 
-# We will use Euclid's formual to generate all the relevant primitive Pythagoreans Triples.
+# We will use Euclid's formula to generate all the relevant primitive Pythagorean Triples.
 # We need to find all comprime m,n where m>n and then: (m^2 - n^2, 2mn, m^2 + n^2) is a primitive triple.
 # Note that if m > sqrt(MAX_L / 2) => m^2 > MAX_L / 2 => c = m^2 + n^2 > MAX_L / 2
 # Also a + b > c => L = a + b + c > 2c and we will get L > MAX_L
@@ -31,7 +31,6 @@ def expand(a, b, c):
     ka, kb, kc = ka+a, kb+b, kc+c
     l = ka + kb + kc
 
-#triples = set()
 lengths = {}
 for m in xrange(1, MAX_M + 1):
   for n in xrange((m % 2) + 1, m, 2):
