@@ -1,4 +1,4 @@
-def getprimes(n):
+def get_primes(n):
   """Computes all the prime numbers up to and not including n
 
   Args:

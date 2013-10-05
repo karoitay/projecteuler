@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from utils.primes import getprimes
+from utils.primes import get_primes
 import math
 
 MAX_P = 5000000
@@ -53,7 +53,7 @@ def find(primes, candidates, size, found=None):
 
 MAX = 9000
 SIZE = 5
-primes = getprimes(MAX_P)
+primes = get_primes(MAX_P)
 candidates = [k for k,v in primes.iteritems() if k <= MAX and v]
 print sum(find(primes, candidates, SIZE)[0])
 

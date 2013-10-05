@@ -1,9 +1,9 @@
 #!/usr/bin/python
-from utils.primes import getprimes
+from utils.primes import get_primes
 
 MAX = 100
 
-primes_dict = getprimes(MAX)
+primes_dict = get_primes(MAX)
 primes = [i for i in xrange(2, MAX) if primes_dict[i]]
 cache = {}
 def update_answer(n, max_element=None):

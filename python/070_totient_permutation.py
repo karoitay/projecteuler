@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from utils.primes import getprimes
+from utils.primes import get_primes
 
 import math
 MAX = 10**7
@@ -15,7 +15,7 @@ def permutations(n1, n2):
     l2.remove(c)
   return len(l2) == 0
 
-primes = getprimes(HIGH_BOUND)
+primes = get_primes(HIGH_BOUND)
 primes = [i for i in xrange(2, HIGH_BOUND) if primes[i]]
 
 result = 0

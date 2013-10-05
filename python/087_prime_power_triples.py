@@ -1,12 +1,12 @@
 #!/usr/bin/python
-from utils.primes import getprimes
+from utils.primes import get_primes
 
 import math
 
 MAX = 50000000
 
 max_prime = int(math.sqrt(MAX))
-primes = getprimes(max_prime)
+primes = get_primes(max_prime)
 primes = [p for p in primes if primes[p]]
 
 found = set()
